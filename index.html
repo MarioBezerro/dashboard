@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="loading loading--hide">
+        <i class="fas fa-spinner loading_spinner"></i>
+    </div>
+    <div class="navbar">
+        <svg width="144" height="18" viewBox="0 0 144 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="logo" d=" "/>
+        </svg>
+        <div class="switch">            
+            <i class="fas fa-sun"></i>
+            <span class="switch_track switch_track--dark"></span>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="state-select">
+            <div class="state-select-toggle">
+                <span class="state-select-toggle_state-select">Brasil</span>
+                <i class="fas fa-chevron-down state-select-toggle_icon"></i>
+            </div>
+            <div class="state-select-list">
+                <input type="text" placeholder="Procurar..." class="state-select-list_search">
+                <ul>
+                    <li class="state-select-list_item" data-id="dashboard-true">DP</li>
+                    <li class="state-select-list_item" data-id="uf=1">DAA</li>
+                    <li class="state-select-list_item" data-id="uf=2">DAT</li>
+                    <li class="state-select-list_item" data-id="uf=3">DPM</li>
+                    <li class="state-select-list_item" data-id="uf=3">DRH</li>
+                    <li class="state-select-list_item" data-id="uf=4">DSA</li>
+                </ul>
+            </div>
+        </div>
+        <section class="status">
+            <div class="status_icon status_icon--confirmed">
+                <i class="fa fa-frown"></i>
+            </div>
+            <div class="info">
+                <span class="info_total info_total--confirmed">123</span>
+                <h2 class="info_label">teste</h2>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status_icon status_icon--deaths">
+                <i class="fa fa-frown"></i>
+            </div>
+            <div class="info">
+                <span class="info_total info_total--deaths">123</span>
+                <h2 class="info_label">teste</h2>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status_icon status_icon--vaccinated-1">
+                <i class="fa fa-book"></i>
+            </div>
+            <div class="info">
+                <span class="info_total info_total--vaccinated-1">123</span>
+                <h2 class="info_label">livro</h2>
+            </div>
+        </section>
+        <section class="status">
+            <div class="status_icon status_icon--vaccinated-2">
+                <i class="fa fa-book"></i>
+            </div>
+            <div class="info">
+                <span class="info_total info_total--vaccinated-2">123</span>
+                <h2 class="info_label">cerveja</h2>
+            </div>
+        </section>
+        <section class="data-box data-box--30">
+            <h2 class="data-box_header">
+                Últimos 30 dias.
+            </h2>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--vaccinated-1">
+            <h2 class="data-box_header">
+                Últimos 30 dias.
+            </h2>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--vaccinated-2">
+            <h2 class="data-box_header">
+                Últimos 30 dias.
+            </h2>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--deaths">
+            <h2 class="data-box_header">
+                Últimos 
+            </h2>
+            <p class="data-box_description"></p>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--confirmed">
+            <h2 class="data-box_header">
+                30 dias.
+            </h2>
+            <p class="data-box_description"></p>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--vaccinated-abs">
+            <h2 class="data-box_header">
+                Últimos dias.
+            </h2>
+            <div class="data-box_body"></div>
+        </section>
+        <section class="data-box data-box--vaccinated-day">
+            <h2 class="data-box_header">
+                Últimos 30 dias.
+            </h2>
+            <div class="data-box_body"></div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p class="footer-text__source">Fonte: Internet</p>
+<p class="footer-text__copyright">Desenvolvido por Mario Dev. <br> <a href="#"> Clique aqui para entrar em contato. </a></p>
+        </div>
+    </footer>
+	    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.27.3/apexcharts.min.js" integrity="sha512-nKTh1Ik8Kzbrxo9A6xOBtEbzdNYcjI4Pr5XE88sNJQk87sY8mBlUfh61lYm0i710r5mGcIZ9tWSwORQbQ4plQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/apexcharts-pt-br.js"></script>
+	<script src="js/apiDashboard.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
